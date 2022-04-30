@@ -68,6 +68,62 @@ select {
   font-family: "Roboto", sans-serif;
 }
 
+header {
+  display: flex;
+  background: #f5f5f6;
+  height: 60px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.navBar {
+  width: 55%;
+}
+.navBar li {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.navBar li:hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.navBar__ul {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 13px;
+}
+.button {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+
+.button button {
+  background-color: white;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.06em;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button button:hover {
+  color: white;
+  background-color: red;
+  transition: 1s;
+}
+
 main {
   width: 60%;
   margin: 0 auto;
@@ -108,10 +164,10 @@ main {
   padding-top: 20px;
 }
 
-.input_area p{
-    margin-top: 30px;
-    margin-left: 15px;
-    margin-bottom: 10px;
+.input_area p {
+  margin-top: 30px;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .buttons label {
@@ -127,6 +183,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .buttons label:nth-child(2) {
   border-top-left-radius: 10px;
@@ -172,4 +229,14 @@ main {
 .convert {
   display: flex;
   justify-content: space-between;
+}
+#text::-webkit-outer-spin-button,
+#text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#text2::-webkit-outer-spin-button,
+#text2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
