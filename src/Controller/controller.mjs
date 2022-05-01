@@ -58,6 +58,5 @@ export default class Controller {
         this.secondData = data.result;
         this.view.secondResult.innerHTML = `1 ${this.clickRightValue} = ${data.result} ${this.clickLeftValue}`;
       });
-      
   }
 }
